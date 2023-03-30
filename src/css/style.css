@@ -7,7 +7,7 @@ body{
 .header{
     display: flex;
     background-color: rgb(0, 0, 0);
-    height: 15vh;
+    height: 150px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -35,16 +35,19 @@ body{
     border-radius: 10px;
     border: 2px solid white;
 }
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 .contain{
     display: flex;
     align-items: center;
     flex-direction: column;
     max-width: 900px;
-    margin: auto;
     background-color:  rgba(251, 251, 251, 0.548);
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.207);
-    
 }
 .img-2{
     display: flex;
@@ -85,10 +88,8 @@ h1{
     color: white;
     padding: 10px;
 }
-@media screen and (min-width: 1000px) {
-    
+@media screen and (min-width: 1100px) {
     .redes{
-        position: absolute;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -96,7 +97,6 @@ h1{
         width: 150px;
         height: 600px;
         background-color: rgba(251, 251, 251, 0.548);
-        margin: 0px 100px;
         border-radius: 15px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.211);
     }
@@ -105,34 +105,64 @@ h1{
     }
     .item-all{
         border-radius: 15px;
-    }
-    .item-1{
-        background-color: var(--cor-1); 
-        padding: 15px;
+        background-color:  var(--cor-1);
+        padding: 10px;
         box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.237);
-
-    }
-    .item-2{
-        background-color: var(--cor-1);
-        padding: 15px;
-        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.237);
-
-    }
-    .item-3{
-        background-color: var(--cor-1);
-        padding: 15px;
-        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.237);
-
     }
     .redes-2{
         display: none;
     }
 }
-@media screen and (min-width: 1000px) {
-    .redes-2{
+@media screen and (max-width: 1100px) {
+    .redes{
         display: none;
     }
     
+}
+
+@media screen and (max-width: 1100px) {
+    .redes{
+        display: none;
+    }
+    .contain{
+        display: flex;
+        justify-content: center;
+        max-width: 750px;
+    }
+    .contain .img-2{
+        display: flex;
+        justify-content: center
+    }
+    .contain img{
+        max-width: 90%;
+    }
+    .text-1 p{
+        text-align: justify;
+        padding: 10px;
+    }
+    .contain h1{
+        padding: 10px;
+    }
+    .redes-2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 650px;
+        height: 100px;
+        background-color: rgba(251, 251, 251, 0.548);
+        border-radius: 15px;
+        margin: 30px auto;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.151);
+    }
+    .redes-2 img{
+        width: 50px;
+    }
+    .item-all{
+        border-radius: 15px;
+        background-color:  var(--cor-1);
+        padding: 10px;
+        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.237);
+    }
 }
 
 @media screen and (max-width: 600px) {
